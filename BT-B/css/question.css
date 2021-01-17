@@ -1,0 +1,91 @@
+#question-container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(https://static.brusheezy.com/system/resources/previews/000/052/181/non_2x/night-time-city-skyscraper-wallpaper-psd-photoshop-backgrounds.jpg);
+}
+
+#container {
+    position: relative;
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.correct {
+    background-color: rgb(3, 194, 3);
+}
+
+.btn {
+    width: 150px;
+    height: 80px;
+    border-radius: 10px;
+    flex-direction: none;
+    font-size: 2rem;
+    font-family: 'Balsamiq Sans', cursive;;
+}
+
+#score {
+    width: 500px;
+    height: 50px;
+    font-size: 2rem;
+    background-color: burlywood;
+    line-height: 50px;
+    text-align: center;
+}
+
+.font {
+        font-family: 'Balsamiq Sans', cursive;;
+        font-size: 1.3rem;
+}
+
+#difficulty {
+    position: absolute;
+    top: 10px;
+    left: 200px;
+}
+
+#answer-buttons {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 15px;
+    margin: 10px 0;
+    outline: none;
+}
+
+.btn2 {
+    margin-top: 20px;
+}
+
+.btnAswer {
+    border-radius: 15px;
+    outline-style: none;
+}
+
+.btnAswer:hover {
+    background-color: rgb(121, 247, 121);
+}
+
+.btn:hover {
+    background-color: rgb(121, 247, 121);
+}
+
+@media screen and (max-width: 450px){
+    #score {
+        width: 250px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+}

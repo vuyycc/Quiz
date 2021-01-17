@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/app.js" type="module"></script>
+</head>
+<body>
+        <question-container></question-container>
+</body>
+
+<template id="ques-list-template">
+    <div class="quest-list">
+        <div id="score">22</div>
+        
+    </div>
+</template>
+
+<template id="question-template">
+    <link rel="stylesheet" href="./css/question.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <div id="question-container" >
+        <div id="score" class="hide font">YOUR SCORE: 0</div>
+        <div id="container" class="font hide">
+            <div id="category" class="font"></div>
+            <div id="difficulty" class="font"></div>
+            <div id="question" class="font"></div>
+            <div id="answer-buttons" class="font">
+                <button class="btnAswer font"></button>
+                <button class="btnAswer font"></button>
+                <button class="btnAswer font"></button>
+                <button class="btnAswer font"></button>
+            </div> 
+        </div>
+        <div id="controls">
+            <button id="start-btn" class="btn" disabled>Start</button>
+            <button id="next-btn" class="btn btn2 hide">Next</button>
+            <button id="restart-btn" class="btn btn2 hide">Restart</button>
+        </div>
+    </div>
+   
+</template>
+</html>
